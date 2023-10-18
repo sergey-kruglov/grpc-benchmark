@@ -1,7 +1,7 @@
 # grpc-test
 Test gRPC performance on different platforms
 
-### TODO
-- [X] Add Node test (Result: 1.3-1.4s)
-- [X] Add Python test (Result 1.3-1.4s)
-- [ ] Add Go test
+### Results
+- Node: 565.268ms - 842.109416ms
+- Python: 761.619416ms - 886.09825ms
+- Go: 162.832833ms - 216.738208ms
