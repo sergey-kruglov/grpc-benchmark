@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option go_package = "github.com/sergey-kruglov/grpc-test/go-grpc/order";
+
 service OrderService {
   rpc Find(FindRequest) returns (FindReply) {}
 }
