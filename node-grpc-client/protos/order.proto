@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+service OrderService {
+  rpc Find(FindRequest) returns (FindReply) {}
+}
+
+message FindRequest {
+  string search = 1;
+}
+
+message FindReply {
+  repeated OrderData orders = 1;
+}
+
+message OrderData {
+  string mongo_id = 1;
+  string id = 2;
+  string otn = 3;
+  string tracking_number = 4;
+}
